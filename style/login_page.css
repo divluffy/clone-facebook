@@ -1,0 +1,307 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family:sans-serif;
+}
+
+body{
+background: #f0f2f5;
+width: 100%;
+
+}
+.container{
+width: 1000px;
+height: 100vh;
+position: absolute;
+display: flex;
+left: 50%;
+transform: translateX(-50%);
+justify-content: space-between;
+align-items: center;
+
+}
+
+.msg-info{
+width: 500px;
+top: 10px;
+transform: translateY(-50%);
+position: relative;
+margin: 10px;
+}
+
+.msg-info svg{
+width: 300px;
+}
+
+.msg-info .span{
+padding-left: 35px;
+font-size: 25px;
+}
+
+
+
+
+/* pop login  */
+.container .pop-login{
+width: 380px;
+height: 380px;
+background: rgb(255, 255, 255);
+display: grid;
+padding:10px ;
+position: relative;
+text-align: center;
+border-radius: 6px;
+box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.pop-login div{
+padding: 5px;
+width: 100%;
+
+}
+
+.pop-login form{
+width: 100%;
+
+}
+
+.pop-login .form form .input input{
+width: 100%;
+padding: 15px;
+outline: none;
+border: 0;
+
+border-radius: 6px;
+border: 1px solid #dddfe2;
+font-size: 17px;
+}
+.pop-login .form form .input input:focus{
+
+border-color:rgb(68, 129, 221);
+
+}
+.pop-login .form form .input input::placeholder{
+color: rgb(151, 148, 148);
+}
+.pop-login .form form .input input:focus::placeholder{
+color: rgb(204, 191, 191);
+}
+
+
+
+
+
+.pop-login .form form .btn-log button{
+cursor: pointer;
+width: 100%;
+padding:13px ;
+color: #fff;
+background: #1877f2;
+outline: none;
+border: none;
+border-radius: 6px;
+font-size: 22px;
+font-weight: 600;
+}
+
+
+
+
+.pop-login .forgot-pass{
+margin-top: -10px;
+padding: 20px;
+border-bottom: 1px solid #dadde1;
+
+
+}
+
+.pop-login .forgot-pass a{
+color: #1877f2;    
+text-decoration: none;
+}
+
+.pop-login .forgot-pass a:hover{
+color: #1877f2;    
+text-decoration: underline;
+}
+
+
+
+
+.pop-login .btn-signup{
+width: 100%;
+margin-top: 20px;
+}
+.pop-login .btn-signup button{
+width: 60%;
+padding: 12px;
+background: #42b72a;
+border: none;
+color: #fff;
+font-size: 16px;
+font-weight: 600;
+border-radius: 6px;
+outline: none;
+line-height: 27px;
+cursor: pointer;
+}
+
+
+
+.pop-login .btn-signup button:hover{
+
+background: #318a1f;
+}
+
+
+.pop-login .more-info{
+background: #f0f2f5;
+margin-top: 70px;
+font-size: 15px;
+}
+
+.pop-login .more-info a{
+color: #000;
+font-weight: 600;
+text-decoration: none;
+}
+
+.pop-login .more-info a:hover{
+
+    text-decoration: underline;
+    }
+    
+
+
+.input .show{
+    position: relative;
+    width: 35px;
+float: right;
+margin-top: -44px;
+margin-right: 7px;
+cursor: pointer;
+display: none;
+}
+
+.input .show.active{
+
+display: inline;
+}
+
+
+
+/* media responsive  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
+@media (max-width: 1000px){
+
+    .msg-info {
+
+        margin-left: 40px;
+
+    }
+    
+    .container .pop-login {
+
+        margin-right: 92px;
+    }
+}
+
+@media (max-width:900px){
+    .container {
+        width: 950px;
+
+    }
+    .msg-info {
+
+        margin-left: 50px;
+    }
+    
+    .container .pop-login {
+
+        margin-right: 120px;
+    }
+}
+
+@media (max-width:800px){
+
+ 
+    .container {
+        width: 0px;
+        position: absolute;
+        display: grid;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .msg-info .span {
+        font-size: 18px; 
+    }
+
+    .msg-info {
+
+ transform: translateY(0%);
+ margin: 0;
+ top: -15px;
+    }
+
+
+    .container .pop-login {
+
+        margin: -100px 0 0 30px;
+    }
+    .pop-login .more-info {
+
+        margin-top: 50px;
+
+    }
+
+
+}
+
+
+@media (max-width:600px){
+
+ 
+    .container {
+        width: 100%;
+
+        position: absolute;
+        display: grid;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .msg-info .span {
+        font-size: 15px; 
+    }
+
+    .msg-info {
+ transform: translateY(0%);
+ margin: auto auto;
+width: 100%;
+top: -55px;
+    }
+
+
+    .container .pop-login {
+
+        margin: -200px 0 0 20px;
+    }
+    .pop-login .more-info {
+
+        margin-top: 50px;
+
+    }
+
+
+
+
+}

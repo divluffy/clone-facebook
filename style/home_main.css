@@ -1,0 +1,808 @@
+body{
+background: #f0f2f5;
+overflow: auto;
+height: 100px;
+}
+
+.main{
+width: 100%;
+display: flex;
+}
+
+
+.center{
+width: calc(100% - 540px);
+
+position: absolute;
+top: 54px;
+left: 270px;
+z-index: 1;
+
+
+}
+.center .center-contents{
+width: 100%;
+height: 1000px;
+position: absolute;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
+
+.center-contents .stories{
+position: relative;
+width: 700px;
+margin: 0 auto;
+display: flex;
+}
+
+.stories .container-story{
+margin: 10px 0;
+width: 50px;
+width: 100%;
+height: 200px;
+border-radius: 7px;
+margin:15px 5px;
+background: rgb(255, 255, 255);
+overflow: hidden;
+position: relative;
+box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+cursor: pointer;
+}
+
+/*  */
+.stories .creat-story .img {
+width: 100%;
+height: 200px;
+
+}
+
+.stories .creat-story .img img{
+height: 150px;
+width: 100%;
+object-fit: cover;
+transition: all 0.4s;
+}
+
+
+.creat-story .svg-add{
+position: absolute;
+background: rgb(255, 255, 255);
+top: 130px;
+left: 35px;
+border-radius: 50%;
+height: 36px;
+}
+
+.creat-story .svg-add svg{
+fill: blue;
+width: 35px;
+height: 35px;
+
+}
+.creat-story .span{
+position: absolute;
+
+bottom: 10px;
+font-size: 15px;
+align-items: center;
+width: 100%;
+font-weight: 600;
+}
+
+.creat-story:hover .span{
+color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.stories .story-friend .img {
+width: 50px;
+height: 200px;
+
+}
+
+.stories .story-friend .back-img-story img{
+height: 200px;
+width: 100%;
+object-fit: cover;
+transition: all 0.3s;
+}
+.stories .creat-story:hover .img img,
+.stories .container-story:hover .back-img-story img{
+height: 210px;
+
+}
+
+/*  */
+
+
+
+.story-friend .img-user{
+position: absolute;
+border: 3px solid rgb(71, 135, 231);
+top: 10px;
+left: 10px;
+border-radius: 50%;
+width: 35px;
+height: 35px;
+}
+
+
+
+.story-friend .img-user img{
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
+}
+
+
+.story-friend .username {
+position: absolute;
+
+background: rgba(24, 24, 24, 0.041);
+bottom: 7px;
+
+width: 100%;
+color: rgb(255, 255, 255);
+align-items: center;
+font-size: 14px;
+font-weight: 600;
+}
+
+
+.story-friend .username span{
+
+box-shadow:inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+
+.stories .arrow-left-stories{
+background: #ffffff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+position: absolute;
+right: -11px;
+top: 85px;
+cursor: pointer;
+padding: 4px 7px;
+box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.stories .arrow-left-stories:hover{
+background: #edeeeb;
+}
+.stories .arrow-left-stories svg{
+fill: rgb(102, 114, 109);
+
+width: 30px;
+height: 30px;
+
+}
+
+
+
+
+/* create post  from user ----------------------- */
+
+
+.center-contents .create-post{
+width: 500px;
+border-radius: 8px;
+margin:  0 auto;
+background: rgb(255, 255, 255);
+box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+margin-top: 10px;
+
+}
+
+
+.create-post .click-post{
+
+display: flex;
+padding: 10px;
+align-items: center;
+}
+
+.click-post .img{
+
+width: 45px;
+height: 40px;
+cursor: pointer;
+border-radius: 50%;
+overflow: hidden;
+}
+.click-post .img img{
+border-radius: 50%;
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.click-post .input{
+width: 100%;
+padding: 5px;
+margin-left: 5px;
+}
+
+.click-post .input input{
+width: 100%;
+background: #dddfe4;
+border-radius: 20px;
+outline: none;
+border: none;
+padding: 10px;
+cursor: pointer;
+
+}
+
+
+hr{
+width: 95%;
+margin-top: 0;
+margin-left: 8px;
+
+}
+.create-post .option-post{
+
+display: flex;
+justify-content: space-between;
+}
+
+.option-post .option{
+display:flex ;
+width: 100%;
+padding: 5px;
+margin: 7px ;
+align-items: center;
+border-radius: 5px;
+cursor: pointer;
+user-select: none;
+}
+
+.option-post .option:hover{
+display:flex ;
+background: #d7dadd;
+}
+.option-post .option .span{
+margin-left: 9px;
+color: #47494d;
+text-transform: capitalize;
+}
+
+
+
+
+
+/* create room */
+
+
+
+
+.center-contents .create-room{
+width: 500px;
+border-radius: 8px;
+margin:  0 auto;
+background: rgb(255, 255, 255);
+box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+margin-top: 10px;
+display: flex;
+overflow: hidden;
+height: 50px;
+position: relative;
+}
+
+
+.create-room .create-go{
+width: 200px ;
+background: rgb(229, 229, 235);
+display: flex;
+border-radius: 30px;
+align-items: center;
+cursor: pointer;
+margin: 5px;
+}
+.create-room .create-go:hover{
+background: rgb(209, 216, 216);
+
+}
+.create-room .create-go .svg{
+
+height: 30px;
+width: 30px;
+
+margin-left: 7px;
+align-items: center;
+padding: 1px 4px;
+}
+.create-room .create-go .svg svg{
+border-radius: 50%;
+fill: rgb(197, 77, 221);
+width: 30px;
+height: 30px;
+}
+
+.create-room .create-go span{
+margin-left: 3px;
+font-size: 14px;
+
+}
+/*  */
+.create-room .users-room{
+display: flex;
+align-items: center;
+}
+
+.create-room .users-room .img{
+width: 40px;
+border-radius: 50%;
+height: 40px;
+cursor: pointer;
+margin:0 2px;
+
+}
+.create-room .users-room .img img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+object-fit: cover;
+}
+
+
+.create-room .arrow-left-rooms{
+background: #eaf0e3;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+position: absolute;
+right: 19px;
+top: 5px;
+cursor: pointer;
+padding: 4px 7px;
+}
+
+.create-room .arrow-left-rooms:hover{
+background: #d5e0c7;
+}
+.create-room .arrow-left-rooms svg{
+fill: rgb(41, 38, 38);
+
+width: 30px;
+height: 30px;
+
+}
+
+/*  */
+/*  */
+/* posts */
+/*  */
+/*  */
+
+.center-contents .posts{
+width: 500px;
+margin: 0 auto;
+border-radius: 7px;
+margin-top: 10px;
+box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+background: #FFF;
+padding: 5px;
+}
+.posts .posts-content{
+position: relative;
+}
+
+
+
+.posts-content .post-head{
+width: 100%;
+display: flex;
+position: relative;
+
+}
+.post-head .img-user{
+width: 40px;
+height:40px;
+border-radius: 50%;
+cursor: pointer;
+
+}
+
+.post-head .img-user img{
+width:100%;
+height:100%;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.post-head .username {
+text-align: center;
+padding: 7px;
+text-transform: capitalize;
+}
+.post-head .username span:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+.post-head .username p{
+color: rgb(88, 86, 86);
+font-size: 10px;
+
+}
+.post-head .post-option{
+cursor: pointer;
+position: absolute;
+top: 10px;
+right: 10px;
+border-radius: 50%;
+padding: 3px 5px;
+}
+.post-head .post-option:hover{
+
+background: #e7dedf;
+}
+    
+
+
+.posts-content .post-title{
+ margin-top: 7px;
+padding:5px 8px;
+text-align: left;
+height: 110px;
+overflow: hidden;
+line-height: 21px;
+font-size: 14px;
+Word-wrap : break-word ;
+}
+
+
+.post-title.active{
+    height:100%;
+}
+.post-title .show-text-post.active{
+display: none;
+}
+.post-title .show-text-post{
+cursor: pointer;
+position: absolute;
+top: 160px;
+color: rgb(24, 14, 14);
+font-size: 16px;
+font-weight: 600;
+}
+
+
+.post-title .show-text-post:hover{
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+.posts-content .post-img-video{
+    background: #25e054;
+    margin-top: 22px;
+    width: 100%;
+    height: 500px;
+
+}
+
+
+
+
+.posts-content .post-img-video .img{
+    width: 500px;
+
+    height: 500px;
+cursor: pointer;
+margin-left: -5px;
+}
+
+
+.post-img-video .img img{
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+
+.posts-content .counts-post{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+
+}
+
+.posts-content .counts-post .likes{
+    display: flex;
+    align-items: center;
+}
+.posts-content .counts-post .likes .img{
+    width: 20px;
+    cursor: pointer;
+
+}
+.posts-content .counts-post .likes .img img{
+    width: 20px;
+
+
+}
+.co
+.counts-post .likes .span{
+margin-left: 5px;
+cursor: pointer;
+color: rgb(100, 92, 92);
+font-weight: 600;
+}
+
+.counts-post .coments{
+    color: rgb(100, 92, 92);
+    font-weight: 600;
+cursor: pointer;
+}
+
+.counts-post .likes .span:hover,
+.counts-post .coments:hover{
+text-decoration: underline;
+}
+
+.posts-content .do-event-post{
+display: flex;
+justify-content: space-between;
+padding:5px 20px ;
+border-top: 1px solid rgb(165, 158, 158);
+border-bottom: 1px solid rgb(165, 158, 158);
+}
+
+
+
+.do-event-post .do{
+align-items: center;
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    padding:6px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+.do-event-post .do:hover{
+background: rgb(234, 240, 239);
+}
+.do-event-post .do svg{
+fill: rgb(153, 148, 148);
+
+}
+
+.do-event-post .do span{
+    color: rgb(122, 117, 117);
+
+margin-left: 5px;
+}
+
+
+
+
+.do-event-post .like-him.active span,
+.do-event-post .like-him.active svg{
+    color: #1877F2;
+    fill: #1877F2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* users comments */
+
+
+
+
+.posts-content .comments-users{
+    width: 100%;
+
+margin-top: 7px;
+padding:  5px;
+}
+
+.comments-users .coment-show{
+border-radius: 7px;
+display: flex;
+margin: 7px 0;
+padding: 5px;
+
+
+}
+
+
+.coment-show .img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+.coment-show .img img{
+    width: 100%;
+    height:  100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.coment-show .msg-user{
+text-align: left;
+margin-left: 6px;
+
+    background: rgb(223, 222, 217);
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.msg-user .username{
+font-size: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+.coment-show .msg-user .content{
+padding: 5px;
+    font-size: 15px;
+    margin-left: 5px;
+    width: 400px;
+}
+
+
+
+.msg-user .event-comment{
+    font-size: 12px;
+    margin:3px 5px;
+    padding-left: 5px;
+}
+.event-comment span{
+    margin-left: 3px;
+    color: rgb(78, 80, 80);
+    cursor: pointer;
+}
+.msg-user .username:hover,
+.event-comment span:hover{
+
+text-decoration: underline;
+}
+
+
+/* add my comments */
+
+.posts-content .add-my-comment{
+    display: flex;
+    position: relative;
+    padding:0 10px;
+margin-top: 10px;
+}
+
+
+
+
+.add-my-comment .img{
+width: 40px;
+height: 40px;
+cursor: pointer;
+}
+.add-my-comment .img img{
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+border-radius: 50%;
+}
+    
+
+.add-my-comment .input-add-comment{
+    margin-left: 5px;
+    display: flex;
+    width: 100%;
+border-radius: 20px;
+background: rgb(228, 225, 228);
+}
+.add-my-comment .input-add-comment input{
+    background: rgb(228, 225, 228);
+padding: 7px;
+width: 100%;
+border-radius: 20px;
+
+border: none;
+outline: none;
+font-size: 16px;
+}
+.add-my-comment .input-add-comment .option-comment{
+    display: flex;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+
+}
+
+.option-comment div{
+    cursor: pointer;
+    margin: 1px;
+    border-radius: 50%;
+
+
+}
+
+
+.option-comment svg{
+fill: rgb(75, 132, 240);
+
+}
+
+
+
+.center-contents .reload-posts{
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 20px;
+line-height: 80px;
+
+
+}
+.reload-posts .svg svg{
+fill: #000;
+
+width: 40px;
+height: 40px;
+
+animation: reload 3.3s infinite;
+}
+
+@keyframes reload{
+0%{
+    transform: rotate(0deg);
+
+}
+100%{
+    transform: rotate(360deg);
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+header .container .dark-mode{
+position: fixed;
+top: 12px;
+right: 200px;
+cursor: pointer;
+border-radius: 50%;
+padding: 3px 5px;
+}
+
+.dark-mode:hover{
+background: #e0dddd;
+
+}
+
+
+.dark-mode svg{
+    fill: rgb(46, 44, 44);
+}
+
+
+body.dark .dark-mode svg{
+    fill: rgb(204, 166, 116);
+}
+
+
+body.dark{
+    background: rgb(53, 61, 61);
+}
+
+body.dark  .container,
+body.dark  .create-pop,
+body.dark .messenger-pop,
+body.dark .notifi-pop,
+body.dark .account-pop
+{
+    background: rgb(53, 61, 61);
+    box-shadow: 0 1px 7px 0 rgba(107, 105, 105, 0.2);
+    color: rgb(179, 172, 172);
+
+}
+
+
+
+body.dark  .container .fname{
+color: rgb(230, 220, 220);
+}
+
+
+body.dark .center .create-room,
+body.dark .center .create-post,
+body.dark .center .posts {
+
+    background: rgb(53, 61, 61);
+    color: rgb(179, 172, 172);
+
+}
+body.dark .left  {
+
+    color: rgb(179, 172, 172);
+
+
+}
+
+
+
+
+

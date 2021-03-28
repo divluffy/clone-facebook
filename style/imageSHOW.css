@@ -1,0 +1,42 @@
+
+
+.image-pop.active{
+width: 100%;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.7);
+position: fixed;
+z-index: 20;
+
+padding:  20px;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+
+.image-pop.active img{
+height: 95vh;
+object-fit: fill;
+left: 50%;
+transform: translateX(-50%);
+position: relative;
+}
+
+
+
+.image-pop .close-pop-show{
+display: none;
+    }
+    
+
+
+.image-pop .close-pop-show.active{
+width: 60px;
+font-size: 60px;
+cursor: pointer;
+top: 20px;
+right: 20px;
+position: absolute;
+color: rgb(255, 255, 255);
+display: inline;
+}

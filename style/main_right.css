@@ -1,0 +1,121 @@
+
+.right{
+width: 270px;
+
+height: 94vh;
+
+position: fixed;
+top: 54px;
+right: 0;
+box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+.right:hover{
+    overflow: scroll;
+
+}
+
+.right .right-content{
+padding: 5px;
+width: 100%;
+}
+
+.right-content .head{
+display: flex;
+align-items: center;
+
+padding:0 5px ;
+
+
+}
+
+
+.right-content .my-friends-msg .user{
+display: flex;
+width: 100%;
+margin-top:5px ;
+border-radius: 6px;
+align-items: center;
+position: relative;
+cursor: pointer;
+user-select: none;
+
+}
+
+
+
+.right-content .my-friends-msg .user:hover{
+background: rgb(221, 224, 222);
+}
+
+
+
+
+
+
+.right-content .my-friends-msg .user span{
+font-size: 15px;
+font-weight: 600;    
+color: rgb(114, 117, 119);
+margin-left: 9px;
+text-transform: capitalize;
+
+}
+
+.right-content  .user .img{
+
+width: 40px;
+height:40px;
+border-radius: 50%;
+}
+
+.right-content  .user .img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
+
+}
+
+
+.right-content   .circle-on {
+height:10px;
+width: 10px;
+background: rgb(17, 182, 44);
+position: absolute;
+top:30px;
+left: 30px;
+border-radius: 50%;
+}
+
+.right-content .head .h3{
+    font-size: 12px;
+}
+.right-content .head .more{
+    right: -95px;
+position: relative;
+}
+.right-content .head .more div{
+border-radius: 50%;
+width: 25px;
+height: 25px;
+line-height: 30px;
+margin: 0 2px;
+
+}
+
+.right-content .head .more div:hover{
+    background-color: rgb(210, 216, 216);
+}
+
+.right-content .head .more div svg{
+width: 18px;
+height: 18px;
+
+}
+
+
+
+
+
+
+

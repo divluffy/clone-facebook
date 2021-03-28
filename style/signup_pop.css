@@ -1,0 +1,255 @@
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(223, 226, 224);
+    opacity: 0.7;
+    z-index: 9;
+
+    display: none;
+    opacity: 0;
+}
+.overlay.active{
+    display: inline;
+    opacity: 1;
+}
+
+
+
+.pop-signup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 420px;
+    height: 570px;
+    background: rgb(255, 255, 255);
+border-radius: 6px;
+box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+z-index: 10;
+
+display: none;
+opacity: 0;
+}
+
+.pop-signup.active{
+    display: inline;
+    opacity: 1;
+}
+
+
+
+
+.pop-signup .content{
+display: inline-block;
+}
+
+
+.content .head-pop{
+width: 100%;
+border-bottom: 1px solid #bcc0c7;
+padding: 12px;
+}
+
+.head-pop span{
+color: #606770;
+    
+}
+.head-pop .close {
+float: right;
+    margin-top:-37px ;
+    padding-right: 10px;
+    cursor: pointer;
+    }
+.head-pop .close span{
+    color: #070707;
+        font-size: 40px;
+    
+    }
+
+
+
+
+.content .form{
+text-align: center;
+ margin-top: 15px;
+}
+
+
+
+.form .details .full-name input{
+    width: 45%;
+   padding: 5px 3px;
+    line-height: 33px;
+    outline: none;
+    border: 1px solid #dddfe2;
+    margin: 7px;
+font-size: 18px;
+border-radius: 6px;
+padding-left: 5px;
+
+}
+
+.details .user-info input{
+    width: 95%;
+    padding: 5px 3px;
+     line-height: 33px;
+     outline: none;
+     border: 1px solid #dddfe2;
+     margin: 7px;
+ font-size: 18px;
+ border-radius: 6px;
+ padding-left: 5px;
+}
+
+
+.details .my-password input{
+
+    width: 95%;
+    padding: 5px 3px;
+     line-height: 33px;
+     outline: none;
+     border: 1px solid #dddfe2;
+     margin: 7px;
+ font-size: 18px;
+ border-radius: 6px;
+ padding-left: 5px;
+
+}
+
+
+.details .birthday .title-bday{
+    width: 5%;
+    padding: 5px 3px;
+     line-height: 25px;
+     margin: 7px;
+ font-size: 14px;
+color: #606770;
+
+}
+
+
+
+.details .birthday select{
+    width: 27%;
+    padding: 10px 5px;
+
+     margin:0 7px ;
+ font-size: 14px;
+color: #000000;
+outline: none;
+border-radius: 6px;
+border: 1px solid #bcc0c7;
+}
+
+
+.details .gender {
+margin-top: 10px;
+
+
+}
+
+.details .gender div{
+left: 20px;
+margin-top: 10px;
+width: 100%;
+display: flex;
+}
+
+
+.details .gender div span{
+    left: 20px;
+    margin-top: 10px;
+    width: 16%;
+    color: #606770;
+
+    }
+    
+.details .gender div .optional{
+margin-left: 10px;
+
+width: 100%;
+}
+
+.details .gender .optional div{
+    width: 30%;
+    padding: 10px 5px;
+
+     margin:0 17px ;
+ font-size: 14px;
+color: #000000;
+outline: none;
+border-radius: 6px;
+border: 1px solid #bcc0c7;
+justify-content: space-between;
+cursor: pointer;
+ }
+    
+    
+.details .msg-signup{
+    color: #515355;
+margin-top: 10px;
+font-size: 10px;
+padding: 5px;
+
+line-height: 13px;
+}
+.details .msg-signup a{
+    color: #274bad;
+    text-decoration: none;
+
+}
+.details .msg-signup a:hover{
+    text-decoration: underline;
+
+
+}
+.details .btn{
+margin-top: 10px;
+}
+
+.details .btn button{
+    width: 50%;
+    background: #00a400;
+    padding: 11px;
+
+outline: none;
+border: none;
+border-radius: 6px;
+color: #fff;
+font-size: 17px;
+font-weight: 600;
+cursor: pointer;
+}
+
+.details .btn button:hover{
+    background: #81b481;
+}
+
+
+.details .btn button:focus{
+margin-top: 2px;
+}
+
+
+label{
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+

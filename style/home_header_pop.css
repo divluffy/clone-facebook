@@ -1,0 +1,596 @@
+
+.create-pop{
+background: rgb(255, 255, 255);
+width: 300px;
+height: 400px;
+position: fixed;
+top: 57px;
+right: 20px;
+border-radius: 6px;
+box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+z-index: 10;
+display: none;
+opacity: 0;
+
+}
+.create-pop.active{
+display: inline;
+opacity: 1;
+
+}
+.create .title{
+width: 100%;
+font-size: 12px;
+margin:5px ;
+font-weight: 700;
+margin-top: 10px;
+}
+
+.create .for-share{
+height: 400px;
+width: 100%;
+display: block;
+
+
+}
+
+.create .for-share .op{
+width: 100%;
+height:44px;
+padding: 5px 0;
+margin: 10px 0;
+display: flex;
+position: relative;
+align-items: center;
+border-radius: 7px;
+padding-left: 5px;
+cursor: pointer;
+user-select: none;
+}
+.create .for-share .op:hover{
+background:#F2F3F5;
+}
+
+
+
+.create .for-share .op .svg{
+width: 35px;
+height: 35px;
+padding: 4px 7px;
+background: #e1e6ec;
+text-align: center;
+border-radius: 50%;
+line-height: 35px;
+
+}
+
+.create .for-share .op .svg svg{
+width: 18px;
+height: 18px;
+
+}
+.create .for-share .op .content{
+text-align: left;
+padding-left: 7px;
+
+}
+
+
+
+.create .for-share .op h4{
+margin-top: 5px;
+font-size: 14px;
+
+}
+
+
+
+.create .for-share div span{
+font-size: 11px;
+color: #8D949E;
+}
+
+
+hr{
+margin-top: 20px;
+margin-left: 32px;
+width: 240px;
+}
+
+/* messenger pop start ------------------------------------------ */
+
+.messenger-pop{
+background: rgb(255, 255, 255);
+width: 300px;
+height: 550px;
+position: fixed;
+top: 57px;
+right: 20px;
+border-radius: 6px;
+box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+
+display: none; 
+opacity: 0; 
+z-index: 11;
+overflow: scroll;
+}
+
+.messenger-pop.active{
+display: inline; 
+opacity: 1; 
+}
+.messenger-pop .content-msg{
+
+width: 100%;
+display: block;
+height: 900px;
+}
+.messenger-pop .content-msg div{
+
+margin: 7px 0;
+}
+.content-msg .head{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: space-between;
+height: 40px;
+}
+.content-msg .head .h3{
+margin-left: 4px;
+}
+.head .more{
+display: flex;
+}
+
+.head .more div{
+text-align: center;
+cursor: pointer;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+line-height: 50px;
+}
+.head .more div:hover{
+background: #eef1f3;
+}
+
+
+
+
+
+
+.content-msg .search-msg{
+display: flex;
+background: rgb(229, 230, 227);  
+border-radius: 20px;
+width: 100%;
+}
+
+.content-msg .search-msg .svg{
+margin-left: 5px;
+
+}
+.content-msg .search-msg .input-search-msg {
+width: 100%;
+
+}
+.content-msg .search-msg .input-search-msg input{
+width: 100%;
+padding: 5px ;
+background: none;
+outline: none;
+border: none;
+
+}
+
+
+
+
+
+
+
+.content-msg .my-friends-msg{
+
+width: 100%;
+margin:5px ;
+position: relative;
+padding: 5px;
+}
+
+
+.content-msg .my-friends-msg .user{
+display: flex;
+width: 100%;
+margin-top:5px ;
+border-radius: 6px;
+align-items: center;
+position: relative;
+cursor: pointer;
+user-select: none;
+
+}
+
+
+
+
+.content-msg .my-friends-msg .user:hover{
+background: rgb(221, 224, 222);
+}
+
+.content-msg .my-friends-msg .user .img{
+
+width: 50px;
+height:50px;
+border-radius: 50%;
+}
+
+.content-msg .my-friends-msg .user .img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+border-radius: 50%;
+
+}
+
+.content-msg .my-friends-msg .user .svg{
+border-radius: 50%;
+padding: 3px 4px;
+position: absolute;
+top:15px;
+right: 50px;
+display: none;
+
+}
+.content-msg .my-friends-msg .user:hover .svg{
+
+display: inline;
+
+}
+.content-msg .my-friends-msg .user .svg svg{
+height: 20px;
+width: 20px;
+}
+
+
+
+.content-msg .my-friends-msg .user .show-options{
+border-radius: 50%;
+padding: 4px 6px;
+position: absolute;
+top:10px;
+right: 10px;
+z-index: 11;
+}
+.content-msg .my-friends-msg .user .show-options:hover{
+background: #eef1f3;
+
+
+}    
+
+.content-msg .my-friends-msg .user span{
+font-size: 15px;
+font-weight: 600;    
+color: rgb(114, 117, 119);
+margin-top: -20px;
+margin-left: 9px;
+text-transform: capitalize;
+
+}
+
+.content-msg .footer-msg{
+position: fixed;
+width: 300px;
+height: 35px;
+background: #ffffff;
+bottom: 5px;
+box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.4);
+text-align: center;
+line-height: 35px;
+}
+
+
+.content-msg .footer-msg a{
+color: #1877F2;
+text-decoration: none;
+}
+
+.content-msg .footer-msg a:hover{
+text-decoration: underline;
+}
+
+
+.content-msg  .circle-on {
+    height:10px;
+    width: 10px;
+    background: rgb(17, 182, 44);
+    position: absolute;
+    top:36px;
+    left: 40px;
+    border-radius: 50%;
+    }
+    
+
+/* start notifitions pop  -------------------------------------- */
+.notifi-pop{
+background: rgb(255, 255, 255);
+width: 300px;
+height: 550px;
+position: fixed;
+top: 57px;
+right: 20px;
+border-radius: 6px;
+box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+
+display: none; 
+opacity: 0; 
+z-index: 11;
+overflow: scroll; 
+}
+
+.notifi-pop.active{
+display: inline; 
+opacity: 1; 
+}
+
+
+.notifi-pop .content-notifi{
+width: 100%;
+position: relative;
+
+
+}
+
+
+.content-notifi .head{
+padding: 10px;
+display: flex;
+justify-content: space-between;
+}
+
+.head .svg{
+border-radius: 50%;
+padding: 4px 6px;
+}
+.head .svg:hover{
+background: #e4e7eb;
+border-radius: 50%;
+padding: 4px 6px;
+}
+
+
+
+
+.content-notifi .notifi{
+display: flex;
+margin: 5px 2px;
+border-radius: 8px;
+padding: 5px;
+align-items: center;
+position: relative;
+cursor: pointer;
+user-select: none;
+
+}
+.content-notifi .notifi:hover{
+background: #dce0e6;
+
+}
+
+.notifi .image-notifi .img-user{
+width: 50px;
+height: 50px;
+border-radius: 50%
+
+}
+
+
+.notifi .image-notifi .img-user img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+object-fit: cover;
+}
+
+
+.notifi .image-notifi .img-notifi {
+
+border-radius: 50%;
+position: absolute;
+top:30px;
+left: 38px;
+
+}
+
+.notifi .image-notifi .img-notifi svg{
+fill: brown;
+background: #f7f7f7;
+border-radius: 50%;
+padding: 2px;
+}
+
+
+
+
+.notifi .msg-notifi{
+width: 280px;
+font-size: 10px;
+margin-left: 15px;
+}
+
+.notifi .msg-notifi .user-notifi span {
+font-size: 12px;
+}
+
+.notifi .msg-notifi .event-notifi span {
+font-size: 11px;
+color: #685e5e;
+}
+.notifi .msg-notifi .time-notifi span {
+font-size: 11px;
+color: #2b28bd;
+font-weight: 500;
+}
+
+.notifi  .options {
+padding: 4px 5px;
+border-radius: 50%;
+}
+
+.notifi:hover  .options {
+background: #f3eeee;
+
+}
+
+.notifi  .circle-on {
+height:8px;
+width: 8px;
+background: rgb(20, 17, 182);
+position: absolute;
+top:25px;
+right: 43px;
+border-radius: 50%;
+}
+
+
+.content-notifi .footer-hid{
+position: fixed;
+width: 300px;
+height: 30px;
+background: #f0f2f5;
+bottom: 5px;
+text-align: center;
+line-height: 35px;
+}
+
+/* messenger pop start ------------------------------------------ */
+
+.account-pop{
+    background: rgb(255, 255, 255);
+    width: 300px;
+    position: fixed;
+    top: 57px;
+    right: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+    user-select: none;
+     display: none; 
+    opacity: 0; 
+    z-index: 11;
+    }
+    
+    .account-pop.active{
+    display: inline; 
+    opacity: 1; 
+    }
+
+.account-pop .account-content{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.account-content .see-profile{
+margin-top: 5px;
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.see-profile .img{
+    width: 55px;
+    height: 55px;
+}
+
+
+.see-profile .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.see-profile .info{
+margin-left: 8px;
+
+}
+.info .h3{
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.info span{
+    font-size: 11px;
+color: #8D949E;
+    text-transform: capitalize;
+}
+
+
+.account-content .option{
+position: relative;
+display: flex;
+margin: 8px 0;
+padding: 5px;
+border-radius: 7px;
+align-items: center;
+cursor: pointer;
+}
+.account-content .option:hover{
+    background-color: #e8ebf0;
+
+
+
+}
+.account-content hr{
+margin-top: 5px;  
+margin-left: 5px;
+width: 95%;
+
+}
+.option .svg{
+margin-right: 5px;
+background: #c7ccd3;
+border-radius: 50%;
+padding: 4px 6px;
+}
+.option .content-feedback{
+    font-size: 12px;
+}
+
+.option .h3{
+    font-size: 12px;
+}
+
+
+.option .show-more{
+    position: absolute;
+    top: 8px;
+    right:  5px;
+
+z-index: 10;
+border-radius: 50%;
+padding: 3px 5px;
+
+
+}
+
+
+
+        
+
+
+
+/* sssssssssssssssssssssssssssssssssssssssssss */
+
+.overlay.active{
+position: fixed;
+width: 100%;
+height: 100vh;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 9;
+}
+

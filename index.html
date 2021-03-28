@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/login_page.css">
+    <link rel="stylesheet" href="./style/signup_pop.css">
+    <script src="./app/login_page.js" defer ></script>
+    <title>facebook Login or Signup-GSG</title>
+</head>
+<body>
+  
+<div class="container">
+
+    <div class="msg-info">
+        <div class="logo-fb" >
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1022.51 360"><defs><style>.cls-1{fill:#1877F2;}</style></defs><title>FBWordmark_Hex-RGB-1024</title><path class="cls-1" d="M166.43,126.68c-9.65,0-12.44,4.28-12.44,13.72v15.66h25.74l-2.58,25.3H154v76.78H123.11V181.36H102.3v-25.3h20.81V140.83c0-25.52,10.29-39,39-39a146.17,146.17,0,0,1,18,1.07v23.81Z"/><path class="cls-1" d="M181.87,203.88c0-28.52,13.51-50,41.82-50,15.44,0,24.87,7.94,29.38,17.8V156.06h29.59V258.14H253.07V242.7c-4.29,9.87-13.94,17.59-29.38,17.59-28.31,0-41.82-21.45-41.82-50Zm30.88,6.87c0,15.22,5.57,25.3,19.94,25.3,12.66,0,19.09-9.22,19.09-23.8V202c0-14.58-6.43-23.8-19.09-23.8-14.37,0-19.94,10.08-19.94,25.3Z"/><path class="cls-1" d="M347,153.91c12,0,23.37,2.58,29.59,6.86l-6.86,21.88a48.6,48.6,0,0,0-20.59-4.72c-16.73,0-24,9.65-24,26.17v6c0,16.52,7.29,26.17,24,26.17a48.6,48.6,0,0,0,20.59-4.72l6.86,21.87c-6.22,4.29-17.58,6.87-29.59,6.87-36.25,0-52.76-19.52-52.76-50.83v-4.72C294.24,173.43,310.75,153.91,347,153.91Z"/><path class="cls-1" d="M380.66,211v-9c0-28.95,16.51-48,50.19-48,31.74,0,45.68,19.3,45.68,47.61v16.3h-65c.65,13.94,6.87,20.16,24,20.16,11.59,0,23.81-2.36,32.82-6.22L474,253c-8.15,4.3-24.88,7.51-39.67,7.51C395.24,260.5,380.66,241,380.66,211Zm30.88-13.3h37.32v-2.57c0-11.15-4.5-20-18-20C416.91,175.14,411.54,183.94,411.54,197.66Z"/><path class="cls-1" d="M591,210.32c0,28.52-13.72,50-42,50-15.44,0-26.16-7.72-30.45-17.59v15.44H489.39V104.8L520.27,102v68.2c4.5-9,14.37-16.3,28.74-16.3,28.31,0,42,21.45,42,50Zm-30.88-7.08c0-14.37-5.57-25.09-20.37-25.09-12.66,0-19.52,9-19.52,23.59v10.72c0,14.58,6.86,23.59,19.52,23.59,14.8,0,20.37-10.72,20.37-25.09Z"/><path class="cls-1" d="M601.33,209.67v-5.14c0-29.39,16.73-50.62,50.83-50.62S703,175.14,703,204.53v5.14c0,29.38-16.73,50.62-50.83,50.62S601.33,239.05,601.33,209.67Zm70.78-7.29c0-13.51-5.58-24.23-20-24.23s-19.95,10.72-19.95,24.23v9.44c0,13.51,5.58,24.23,19.95,24.23s20-10.72,20-24.23Z"/><path class="cls-1" d="M713.27,209.67v-5.14c0-29.39,16.73-50.62,50.83-50.62s50.83,21.23,50.83,50.62v5.14c0,29.38-16.73,50.62-50.83,50.62S713.27,239.05,713.27,209.67Zm70.78-7.29c0-13.51-5.58-24.23-19.95-24.23s-19.94,10.72-19.94,24.23v9.44c0,13.51,5.57,24.23,19.94,24.23s19.95-10.72,19.95-24.23Z"/><path class="cls-1" d="M857.39,204.74l30.45-48.68h32.81l-31.95,50.4,33.24,51.68H889.13l-31.74-50v50H826.5V104.8L857.39,102Z"/></svg> 
+        </div>
+        <div class="span">
+            <span>Connect with friends and the world around you on Facebook.</span>
+        </div>
+    </div>
+
+    <div class="pop-login">
+
+        <div class="form">
+            <form action="">
+                <div class="input">
+                    <input type="email" placeholder="Email or Phone Number">
+                </div>
+                <div class="input password">
+                    <input type="password" placeholder="Password" id="input-pass" required>
+                    <div class="show" id="show">   
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path fill="#6563ff" d="M12,7c2.8,0,5,2.2,5,5c0,0.2,0,0.5-0.1,0.7l3,3c0.8-1,1.4-2.1,2-3.3c0.1-0.3,0.1-0.5,0-0.8C19.9,6.9,16.1,4,12,4c-1.1,0-2.2,0.2-3.2,0.6l2.5,2.5C11.5,7,11.8,7,12,7z M21.7,20.3C21.7,20.3,21.7,20.3,21.7,20.3l-3.1-3.1l0,0l-2.5-2.4l0,0l-1.5-1.5l0,0l-4-4l0,0L9.2,7.8l0,0L7,5.5l0,0L3.7,2.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4c0,0,0,0,0,0l3.1,3.1c-1.4,1.4-2.5,3-3.3,4.8c-0.1,0.3-0.1,0.5,0,0.8c2,4.7,5.8,7.6,9.9,7.6c1.8,0,3.5-0.6,5-1.6l3.3,3.3c0.4,0.4,1,0.4,1.4,0S22.1,20.7,21.7,20.3z M12,17c-2.8,0-5-2.2-5-5c0-1,0.3-1.9,0.8-2.7l1.5,1.5C9.1,11.1,9,11.6,9,12c0,1.7,1.3,3,3,3c0.4,0,0.9-0.1,1.3-0.3l1.5,1.5C13.9,16.7,13,17,12,17z"/></svg>
+                    </div>
+                </div>
+                <div class="btn-log">
+                    <button type="reset" class="btn-login">Log In</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="forgot-pass">
+            <a href="">Forgot Password?</a>
+        </div>
+
+        <div class="btn-signup">
+            <button class="btnSignup">Create New Account</button>
+        </div>
+
+        <div class="more-info">
+        <span><a href="">Create a Page</a> for a celebrity, band or business.</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="overlay"></div>
+
+<div class="pop-signup">
+    <div class="content">
+        <div class="head-pop">
+            <h1>Sign Up</h1>
+            <span>It’s quick and easy.</span>
+            <div class="close">
+                <span>&times;</span>
+            </div>
+        </div>
+
+        <form action="" class="form">
+            <div class="details">
+                <div class="full-name">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+                <div class="user-info">
+                    <input type="text" placeholder="Mobile number or email" required>
+                </div>
+                <div class="my-password">
+                    <input type="text" placeholder="New password" required>
+                </div>
+                <div class="birthday">
+                    <div class="title-bday">
+                        <span>Birthday</span>             
+                    </div>
+                    <select name="month" id="month">
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8" selected>Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+
+                    <select name="day" id="day">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="" selected>25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+                    <select name="year" id="year">
+                        <option  value="2021" >2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000" selected>2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option>
+                    </select>
+                </div>
+                <div class="gender">    
+                    <div>
+                        <span>Gender</span>
+                    </div >
+                    <div class="optional">
+                        <div class="female radios">
+                            <label for="female">Female</label>
+                            <input type="radio" name="female" value="1" class="radio-input" id="female" >
+                        </div>
+                        <div class="female radios">
+                            <label for="male">Male</label>
+                            <input type="radio" name="male" class="radio-input" value="2" id="male">
+                        </div>
+                        <div class="sex-other radios">
+                            <label for="other">Other</label>
+                            <input type="radio" name="other"   class="radio-input" value="3" id="other">
+                        </div>
+                    </div>
+                </div>
+                <div class="msg-signup">
+                    <span>By clicking Sign Up, you agree to our <a href="">Terms</a>,
+                            <a href="">Data Policy</a> and <a href="">Cookies Policy</a>.
+                            You may receive SMS Notifications from us and can opt out any time.</span>
+                </div>
+                <div class="btn">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
