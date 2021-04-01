@@ -8,7 +8,7 @@ top: 57px;
 right: 20px;
 border-radius: 6px;
 box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
-z-index: 10;
+z-index: 30;
 display: none;
 opacity: 0;
 
@@ -111,7 +111,7 @@ box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
 
 display: none; 
 opacity: 0; 
-z-index: 11;
+z-index: 30;
 overflow: scroll;
 }
 
@@ -325,7 +325,7 @@ box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
 
 display: none; 
 opacity: 0; 
-z-index: 11;
+z-index: 30;
 overflow: scroll; 
 }
 
@@ -477,7 +477,7 @@ line-height: 35px;
     user-select: none;
      display: none; 
     opacity: 0; 
-    z-index: 11;
+    z-index: 30;
     }
     
     .account-pop.active{
@@ -591,6 +591,6 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-z-index: 9;
+z-index: 20;
 }
 

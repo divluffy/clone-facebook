@@ -13,6 +13,23 @@ box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
     overflow: scroll;
 
 }
+.right::-webkit-scrollbar{
+
+    width: 10px;
+}
+.right::-webkit-scrollbar-track{
+
+background: rgb(228, 226, 226);
+
+
+}
+.right::-webkit-scrollbar-thumb{
+
+background: rgb(145, 143, 143);
+border-radius: 20px;
+}
+
+
 
 .right .right-content{
 padding: 5px;

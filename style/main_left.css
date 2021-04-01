@@ -8,9 +8,28 @@ left: 0;
 scrollbar-color: #000;
 user-select: none;
 }
+
 .left:hover{
 overflow: scroll;
 }
+
+.left::-webkit-scrollbar{
+
+    width: 10px;
+}
+.left::-webkit-scrollbar-track{
+
+background: rgb(228, 226, 226);
+
+
+}
+.left::-webkit-scrollbar-thumb{
+
+background: rgb(145, 143, 143);
+border-radius: 20px;
+}
+
+
 
 .left .left-content{
 padding: 0 15px ;

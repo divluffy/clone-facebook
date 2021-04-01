@@ -1,13 +1,209 @@
 .creatr-post-pop{
-    background-color: royalblue;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 600px;
-    height: 600px;
-    
-    z-index: 20;
-    display: none;
+background-color: rgb(255, 255, 255);
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 500px;
+/* height: 550px; */
+border-radius: 7px;
+
+z-index: 30;
+display: none;
 }
+
+.creatr-post-pop.active{
+
+    display: inline;
+
+}
+
+
+
+.creatr-post-pop .post-pop-content{
+position: relative;
+padding: 10px;
+width: 100%;
+}
+
+.post-pop-content .head{
+text-align: center;
+padding: 10px;
+color: rgb(50, 51, 54);
+font-size: 22px;
+border-bottom: 1px solid rgb(184, 173, 173);
+}
+
+
+
+.head .closr-create-post{
+position: fixed;
+top: 10px;
+right: 10px;
+background: #d0d6df;
+font-size: 25px;
+padding: 5px 12px;
+border-radius: 50%;
+user-select: none;
+cursor: pointer;
+}
+
+.post-pop-content .user{
+display: flex;
+padding: 10px;
+align-items: center;
+}
+
+.user .img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+
+.user .img img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+object-fit: cover;
+
+
+}
+
+.user .name{
+margin-left: 7px;
+font-size: 17px;
+text-transform: capitalize;
+font-weight: 600;
+}
+
+
+.post-pop-content .subject{
+
+padding: 15px 3px;
+}
+
+.subject .my-art textarea{
+width: 98%;
+height: 100px;
+
+
+border: 0;
+overflow: auto;
+outline: none;
+resize: none;
+font-size: 16px;
+font-weight: 500;
+
+}
+
+.subject .my-art textarea::placeholder{
+font-weight: 500;
+font-size: 22px;
+letter-spacing: 0.5px;
+}
+
+.my-art textarea::-webkit-scrollbar{
+
+width: 10px;
+}
+.my-art textarea::-webkit-scrollbar-track{
+
+background: rgb(228, 226, 226);
+
+
+}
+.my-art textarea::-webkit-scrollbar-thumb{
+
+background: rgb(180, 174, 174);
+border-radius: 20px;
+}
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.post-pop-content .for-add{
+position: relative;
+
+border: 1px solid rgb(212, 206, 206);
+width: 100%;
+height: 55px;
+border-radius: 11px;
+display: flex;
+
+padding: 12px;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.for-add .option{
+overflow: hidden;
+
+border-radius: 50%;
+padding: 7px 4px;
+height: 40px;
+width: 40px;
+background: rgb(255, 255, 255);
+text-align: center;
+cursor: pointer;
+}
+
+
+.for-add .option:hover{
+
+background: rgb(218, 218, 219);
+}
+
+
+/*  */
+
+.post-pop-content .publish{
+}
+
+.publish button{
+    width: 100%;
+
+padding: 10px;
+color: #fff;
+font-size: 16px;
+background: #1877F2;
+border: none;
+outline: none;
+margin-top: 10px;
+border-radius: 7px;
+cursor: pointer;
+}
+
+
+
+
+/*  */
+
+.overlay-post.active{
+
+width: 100%;
+height: 100vh;
+position: fixed;
+z-index: 20;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+
 

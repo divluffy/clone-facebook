@@ -1,0 +1,294 @@
+
+
+
+.back-shadow{
+    height: 602px;
+
+
+
+}
+.back-shadow div{
+    background: linear-gradient(to bottom,#000 20% ,rgb(231, 231, 231) 99%);
+height: 300px;
+}
+main{
+
+    width: 100%;
+    height: 602px;
+    background-color: rgb(255, 255, 255);
+
+position: relative;
+
+
+}
+
+main .container-prof{
+width: 1000px;
+height: 130px;
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+
+.container-prof .head-profile{
+
+}
+
+.head-profile .back-img{
+width: 100%;
+height: 400px;
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 1000px;
+
+}
+
+
+.back-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: top;
+border-radius: 0 0 30px 30px;
+
+}
+
+
+.head-profile .img-profile{
+position: absolute;
+top: 240px;
+left: 50%;
+transform: translateX(-50%);
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+border: 4px solid #FFF;
+}
+
+.img-profile img{
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+object-position: top;
+    border-radius: 50%;
+}
+
+.head-profile .username{
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.head-profile .about{
+
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    transform: translateX(-50%);
+
+text-align: center;
+}
+
+.about textarea{
+    color: rgb(114, 111, 109);
+    font-size: 16px;
+
+resize: none;
+background: none;
+border: none;
+outline: none;
+text-align: center;
+height: 50px;
+user-select: none;
+padding: 5px;
+border-radius: 6px;
+}
+
+.about textarea.active{
+border: 1px solid rgb(114, 102, 102);
+
+}
+.about span{
+    color:#3578E5 ;
+    font-size: 18px;
+    text-decoration: none;
+font-weight: 600;
+cursor: pointer;
+
+}
+
+
+
+
+/*  */
+
+ .option-profile{
+    border-top: 1px solid rgb(185, 177, 177);
+
+    height: 50px;
+    width: 100%;
+
+top: 550PX;
+position: absolute;
+display: flex;
+justify-content: space-between;
+
+}
+
+
+.option-profile .op{
+display: flex;
+align-items: center;
+
+}
+
+
+.op.left-op ul li{
+list-style: none;
+padding:  10px;
+margin: 5px;
+cursor: pointer;
+border-radius: 7px;
+align-items: center;
+
+}
+.op.left-op ul li:hover{
+    background: rgb(226, 225, 225);
+
+
+}
+.op.left-op ul li.more{
+    padding: 7px;
+
+display: flex;
+width: 90px;
+}
+
+.op.left-op ul li.more span{
+
+margin-left: 5px;
+}
+.op.left-op ul li.more .svg{
+margin-left: 5px;
+height: 20px;
+}
+
+
+
+
+ul{
+    display: flex;
+}
+
+.op.left-op ul li.more .more-show{
+
+position: absolute;
+background: rgb(255, 255, 255);
+display: block;
+margin-left: 83px;
+width: 250px;
+border-radius: 6px;
+top: 5px;
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+display: none;
+}
+
+.more-show li{
+    font-size: 12px;
+    height: 30px;
+    align-items: center;
+
+}
+
+
+.op.left-op ul li.more:hover .more-show{
+
+    display: inline;
+}
+
+
+/*  */
+.op.right-op ul li{
+    list-style: none;
+    padding:  10px;
+    margin: 5px;
+    cursor: pointer;
+    height: 42px;
+    border-radius: 7px;
+    align-items: center;
+    background: rgb(226, 225, 225);
+    
+    }
+    .op.right-op ul li:hover{
+        background: rgb(214, 212, 212);
+
+    
+    }
+ .op.right-op ul li.svg{
+        padding: 7px;
+
+    display: flex;
+
+    width: 120px;
+    font-size: 14px;
+
+    }
+
+    .op.right-op ul li.svg div{
+
+margin-right: 10px;
+
+    }
+
+    .op.right-op ul li.more .more-show{
+
+        position: absolute;
+        background: rgb(255, 255, 255);
+        display: block;
+
+        
+        width: 150px;
+        border-radius: 6px;
+        top: 50px;
+        right: 0px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+        display: none;
+        }
+        
+        .more-show li{
+            font-size: 12px;
+            height: 30px;
+            align-items: center;
+        
+        }
+        
+        
+       .op.right-op ul li.more:hover .more-show{
+        
+            display: inline;
+        } 
+
+
+
+
+
+
+/* conect the page all image/videos */
+
+
+.down-profile{
+margin-top: 10px;
+width: 100%;
+text-align: center;
+
+}
+
+
+

@@ -95,12 +95,13 @@ width: 80px;
 height: 48px;
 margin: 0 3px;
 cursor: pointer;
+
 }
     
- .menu ul li a svg {
+ .menu ul li svg {
     width: 25px;
     height: 25px;
-   fill: #606770;
+   fill: #8c9197;
 
 
 }
@@ -109,26 +110,28 @@ cursor: pointer;
 background:#DADDE1 ;
 }
 
-.menu ul li a svg:focus {
+.menu ul li svg:focus {
 
    fill: #3578E5;
 } 
 
-.menu ul .border-bottom {
+ .menu ul .border-bottom {
 border-bottom:3px solid blue;
 position: absolute;
 width: 80px;
 height: 48px;
+z-index: -1;
+
 }
 
 #active{
     fill: #3578E5;
 
-}
+} 
 
 /*  */
 .container .control{
-    display: flex;
+ display: flex;
 right: 5px;
 position: absolute;
 
@@ -150,10 +153,14 @@ background: #f0f2f5;
 line-height: 35px;
 cursor: pointer;
 padding: 5px;
-
+z-index: 30;
 
 }
     
+
+
+
+
 
 .control ul li svg{
 width: 18px;
