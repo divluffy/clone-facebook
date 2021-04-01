@@ -14,11 +14,32 @@ let homeSVG = document.querySelector('.home-svg'),
     messenger = document.querySelector('.messenger'),
     notifications = document.querySelector('.notifications'),
     accounts = document.querySelector('.account'),
-    overlay = document.querySelector('.overlay'),
     createPOP = document.querySelector('.create-pop'),
     messengerPOP = document.querySelector('.messenger-pop'),
      notifiPOP = document.querySelector('.notifi-pop'),
      accountPOP = document.querySelector('.account-pop')
+
+let userphoto =document.querySelector('.user-profile')
+let overlay = document.querySelector('.overlay')
+let logout = document.querySelector('.log-out')
+
+
+userphoto.onclick = ()=>{
+   location.assign('../profile/index.html')
+}
+
+
+
+ homes.onclick = ()=>{
+      location.assign('../home/home.html')
+ }
+
+ logout.onclick = ()=>{
+    location.assign('../index.html')
+}
+
+
+
 
     creates.onclick=()=>{
         createPOP.classList.toggle("active")
@@ -53,21 +74,7 @@ overlay.onclick=()=>{
 
     
 
-    homes.onclick = ()=>{
-        window.location.pathname = "home"
-    }
-    friends.onclick = ()=>{
-        window.location.pathname = "friends"
-    }
-    watchs.onclick = ()=>{
-        window.location.pathname = "watch"
-    }
-    groups.onclick = ()=>{
-        window.location.pathname = "groups"
-    }
-    games.onclick = ()=>{
-        window.location.pathname = "games"
-    }
+
 
  if(window.location.hash.indexOf("home")){
     homeSVG.id = "active"
